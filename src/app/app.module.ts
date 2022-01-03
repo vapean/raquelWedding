@@ -9,6 +9,13 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { RealSitioComponent } from './real-sitio/real-sitio.component';
+import { PalaceComponent } from './palace/palace.component';
+import { ConfirmComponent } from './confirm/confirm.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
+import { AccommodationComponent } from './accommodation/accommodation.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +23,14 @@ import { ErrorComponent } from './error/error.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    AboutUsComponent,
+    RealSitioComponent,
+    PalaceComponent,
+    ConfirmComponent,
+    ContactComponent,
+    LoginComponent,
+    AccommodationComponent
   ],
   imports: [
     BrowserModule,
