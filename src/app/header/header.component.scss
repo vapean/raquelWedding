@@ -36,6 +36,7 @@
 @media (max-width: 992px) {
   #header_component {
     height: unset;
+    min-height: 70px;
 
     .hamburger-button{
       border: 1px solid var(--primaryTextColor);

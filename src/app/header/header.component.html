@@ -44,7 +44,7 @@
 
   <!-- cabecera mobile -->
   <div class="d-block d-lg-none px-3 position-relative">
-    <div (click)="isMenuCollapsed=!isMenuCollapsed" class="btn hamburger-button">|||</div>
+    <div (click)="isMenuCollapsed=!isMenuCollapsed" class="btn hamburger-button" *ngIf="activeUrl!== '/login'">|||</div>
     <img src="../../assets/images/sello_boda.png" class="logo">
     <div [ngClass]="{'isMenuCollapsed': isMenuCollapsed}" class="tertiaryBgColor mobile-nav">
       <div class="nav-item" [routerLink]="['/nosotros']">Nosotros</div>
