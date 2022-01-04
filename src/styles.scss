@@ -2,3 +2,90 @@
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* paleta de colores */
+$primaryBgColor: #eeeddd;
+$secondaryBgColor: #9bb48a;
+$tertiaryBgColor: #686955;
+$quaternaryBgColor: #45533f;
+
+$primaryTextColor: #eeeddd;
+$secondaryTextColor: #9bb48a;
+$tertiaryTextColor: #2d3629;
+$quaternaryTextColor: #000000;
+
+
+.primaryBgColor {
+  background-color: $primaryBgColor;
+}
+.secondaryBgColor {
+  background-color: $secondaryBgColor;
+}
+.tertiaryBgColor {
+  background-color: $tertiaryBgColor;
+}
+.quaternaryBgColor {
+  background-color: $quaternaryBgColor;
+}
+
+.primaryTextColor {
+  color: $primaryTextColor;
+}
+.secondaryTextColor {
+  color: $secondaryTextColor;
+}
+.tertiaryTextColor {
+  color: $tertiaryTextColor;
+}
+.quaternaryTextColor {
+  color: $quaternaryTextColor;
+}
+
+
+* {
+  color: $primaryTextColor;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+body{
+  background-color: white;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong{
+  color: $tertiaryTextColor;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Playfair Display', serif;}
+
+h1{
+  font-size: 30px;
+}
+
+h2{
+  font-size: 28px;
+}
+
+h3{
+  font-size: 25px;
+}
+
+h4{
+  font-size: 22px;
+}
+
+h5{
+  font-size: 20px;
+}
+
+h6{
+  font-size: 18px;
+}
+
+p{
+  margin-bottom: 0;
+}

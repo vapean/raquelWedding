@@ -53,12 +53,12 @@ const routes: Routes = [
     canActivate: [InternalGuard]
   },
   {
-    path: 'error/not-found',
+    path: 'error',
     component: ErrorComponent,
   },
   {
     path: '**',
-    redirectTo: '/error/not-found'
+    redirectTo: '/error'
   }
 ];
 
