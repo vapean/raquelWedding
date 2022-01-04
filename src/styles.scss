@@ -5,47 +5,49 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
 
-/* paleta de colores */
-$primaryBgColor: #eeeddd;
-$secondaryBgColor: #9bb48a;
-$tertiaryBgColor: #686955;
-$quaternaryBgColor: #45533f;
+:root{
+  /* paleta de colores */
+  --primaryBgColor: #eeeddd;
+  --secondaryBgColor: #9bb48a;
+  --tertiaryBgColor: #686955;
+  --quaternaryBgColor: #45533f;
 
-$primaryTextColor: #eeeddd;
-$secondaryTextColor: #9bb48a;
-$tertiaryTextColor: #2d3629;
-$quaternaryTextColor: #000000;
+  --primaryTextColor: #eeeddd;
+  --secondaryTextColor: #9bb48a;
+  --tertiaryTextColor: #2d3629;
+  --quaternaryTextColor: #000000;
+}
 
 
 .primaryBgColor {
-  background-color: $primaryBgColor;
+  background-color: var(--primaryBgColor);
 }
 .secondaryBgColor {
-  background-color: $secondaryBgColor;
+  background-color: var(--secondaryBgColor);
 }
 .tertiaryBgColor {
-  background-color: $tertiaryBgColor;
+  background-color: var(--tertiaryBgColor);
 }
 .quaternaryBgColor {
-  background-color: $quaternaryBgColor;
+  background-color: var(--quaternaryBgColor);
 }
 
 .primaryTextColor {
-  color: $primaryTextColor;
+  color: var(--primaryTextColor);
 }
 .secondaryTextColor {
-  color: $secondaryTextColor;
+  color: var(--secondaryTextColor);
 }
 .tertiaryTextColor {
-  color: $tertiaryTextColor;
+  color: var(--tertiaryTextColor);
 }
 .quaternaryTextColor {
-  color: $quaternaryTextColor;
+  color: var(--quaternaryTextColor);
 }
 
 
 * {
-  color: $primaryTextColor;
+  color: var(--primaryTextColor);
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -56,7 +58,7 @@ body{
 }
 
 h1, h2, h3, h4, h5, h6, b, strong{
-  color: $tertiaryTextColor;
+  color: var(--tertiaryTextColor);
 }
 
 h1, h2, h3, h4, h5, h6{

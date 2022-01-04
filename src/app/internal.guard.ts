@@ -22,7 +22,7 @@ export class InternalGuard implements CanActivate {
     if (localStorage.getItem('islogged') === 'true') {
       return true;
     } else {
-      this.router.navigate(['error']);
+      this.router.navigate(['login']);
       return false;
     }
 
