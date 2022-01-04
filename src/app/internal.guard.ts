@@ -19,7 +19,7 @@ export class InternalGuard implements CanActivate {
 
   checkPermission(): boolean {
 
-    if (localStorage.getItem('islogged') === 'true') {
+    if (localStorage.getItem('isLogged') === 'true') {
       return true;
     } else {
       this.router.navigate(['login']);
