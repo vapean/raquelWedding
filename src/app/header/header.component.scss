@@ -1,11 +1,14 @@
 #header_component {
   height: 90px;
+  
   img {
     max-width: 60px;
   }
 
   .nav-item{
     cursor: pointer;
+    font-family: 'Playfair Display', serif;
+
 
     hr{
       margin: 0;
