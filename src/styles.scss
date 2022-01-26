@@ -118,9 +118,17 @@ h6{
 }
 
 p{
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .pointer{
   cursor: pointer;
+}
+
+img{
+  max-width: 100%;
+}
+
+.mainImage{
+  max-width: 70%;
 }
