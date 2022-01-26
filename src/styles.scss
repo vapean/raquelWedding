@@ -20,6 +20,9 @@
   --quaternaryTextColor: #000000;
 }
 
+main{
+  background-color: var(--primaryBgColor);
+}
 
 .primaryBgColor {
   background-color: var(--primaryBgColor);
