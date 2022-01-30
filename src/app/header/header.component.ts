@@ -11,7 +11,8 @@ import { filter } from 'rxjs/operators';
 export class HeaderComponent implements OnInit {
 
   public isMenuCollapsed = true;
-  public activeUrl
+  public activeUrl;
+  public islogged: boolean;
 
   constructor(
     private router: Router
@@ -21,7 +22,11 @@ export class HeaderComponent implements OnInit {
 
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((event: NavigationEnd) => {
       this.activeUrl = event.url
+      this.islogged = localStorage.getItem('isLogged') === 'true';
     });
+
+
+
 
   }
 
