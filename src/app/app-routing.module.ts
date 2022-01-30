@@ -20,7 +20,6 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
-    canActivate: [InternalGuard]
   },
   {
     path: 'home',
