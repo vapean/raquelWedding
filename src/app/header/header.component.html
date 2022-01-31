@@ -6,7 +6,8 @@
     <div class="row d-none d-lg-flex">
 
       <div class="col-2">
-        <img *ngIf="islogged" class="pointer" src="assets/images/sello_boda_tertiaryTextColor.png" [routerLink]="['/home']">
+        <img *ngIf="islogged" class="pointer" src="assets/images/sello_boda_tertiaryTextColor.png"
+          [routerLink]="['/home']">
         <img *ngIf="!islogged" src="assets/images/sello_boda_tertiaryTextColor.png">
       </div>
 
@@ -41,20 +42,22 @@
 
     </div>
 
-  </div>
 
-  <!-- cabecera mobile -->
-  <div class="d-block d-lg-none px-3 position-relative">
-    <div (click)="isMenuCollapsed=!isMenuCollapsed" class="btn hamburger-button" *ngIf="activeUrl!== '/login'">|||</div>
-    <img src="assets/images/sello_boda.png" class="logo">
-    <div [ngClass]="{'isMenuCollapsed': isMenuCollapsed}" class="tertiaryBgColor mobile-nav">
-      <div class="nav-item" [routerLink]="['/nosotros']">Nosotros</div>
-      <div class="nav-item" [routerLink]="['/real-sitio']">Real Sitio</div>
-      <div class="nav-item" [routerLink]="['/palacio-carlos-iii']">Palacio Carlos III</div>
-      <div class="nav-item" [routerLink]="['/alojamiento']">Alojamiento</div>
-      <div class="nav-item" [routerLink]="['/confirmar-asistencia']">Confirmar Asistencia</div>
-      <div class="nav-item" [routerLink]="['/contacto']">Contacto</div>
+    <!-- cabecera mobile -->
+    <div class="row">
+      <div class="col-12 d-block d-lg-none position-relative">
+        <div (click)="isMenuCollapsed=!isMenuCollapsed" class="btn hamburger-button" *ngIf="islogged">|||</div>
+        <img src="assets/images/sello_boda.png" class="logo" [routerLink]="['/home']">
+        <div [ngClass]="{'isMenuCollapsed': isMenuCollapsed}" class="tertiaryBgColor mobile-nav">
+          <div class="nav-item" [routerLink]="['/nosotros']">Nosotros</div>
+          <div class="nav-item" [routerLink]="['/real-sitio']">Real Sitio</div>
+          <div class="nav-item" [routerLink]="['/palacio-carlos-iii']">Palacio Carlos III</div>
+          <div class="nav-item" [routerLink]="['/alojamiento']">Alojamiento</div>
+          <div class="nav-item" [routerLink]="['/confirmar-asistencia']">Confirmar Asistencia</div>
+          <div class="nav-item" [routerLink]="['/contacto']">Contacto</div>
+        </div>
+      </div>
     </div>
-  </div>
 
+  </div>
 </div>

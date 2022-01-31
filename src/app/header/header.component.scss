@@ -43,9 +43,10 @@
     min-height: 70px;
 
     .hamburger-button{
-      border: 1px solid var(--primaryTextColor);
-      color: var(--primaryTextColor);
+      border: 1px solid var(--tertiaryTextColor);
+      color: var(--tertiaryTextColor);
       transform: rotate(90deg);
+      padding: 10px 15px;
     }
 
     .mobile-nav{
@@ -71,8 +72,8 @@
       position: absolute;
       right: 50%;
       transform: translateX(50%);
-      top: -8px;
-      max-height: 50px;
+      top: -7px;
+      max-height: 60px;
     }
 
   }

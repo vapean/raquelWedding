@@ -1,13 +1,20 @@
-<div id="login-component" class="container">
+<div id="login-component" class="container text-justify">
 
-  <h2 class="py-4">Bienvenido</h2>
+  <h2 class="pt-5">Bienvenido</h2>
 
-  <p class="mt-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil fugit praesentium minus enim ea architecto fuga doloremque teneturs nisi quos ad ipsum illum, eum officiis voluptas, dolore libero distinctio.</p>
+  <p class="mt-4">
+    ¡Aprovecha con nosotros el fin de semana de nuestra boda!
+  </p>
+  <p> 
+    En esta página encontraréis información sobre hoteles y el entorno de La Granja, para los que queráis alargar el
+    fin de semana. También iremos incorporando información útil sobre la boda y los posibles cambios que puedan surgir.
+  </p>
 
   <form class="mt-5" [formGroup]="accessForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="password">Clave de acceso</label>
-      <input type="text" formControlName="password" class="form-control" id="password" placeholder="Introduce la clave de acceso">
+      <input type="text" formControlName="password" class="form-control" id="password"
+        placeholder="Introduce la clave de acceso">
       <p *ngIf="accessForm.errors?.incorrect">clave de acceso inválida</p>
     </div>
     <button type="submit" class="btn w-100 border-0 tertiaryBgColor primaryTextColor">Entrar</button>

@@ -132,3 +132,10 @@ img{
 .mainImage{
   max-height: 350px;
 }
+
+@media screen and (max-width: 991px) {
+  .container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
