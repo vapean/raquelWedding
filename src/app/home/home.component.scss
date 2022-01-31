@@ -1,13 +1,21 @@
-#home_component{
-  .logo{
+#home_component {
+  .logo {
     max-width: 30%;
   }
 
-  .section-image{
+  .section-image {
     max-width: 100%;
   }
 
-  .custom-text{
+  .custom-text {
     margin-top: -20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #home_component {
+    .custom-text {
+      margin-top: 1.5rem;
+    }
   }
 }
