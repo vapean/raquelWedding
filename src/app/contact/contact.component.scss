@@ -1,0 +1,102 @@
+$size: 700px;
+$bg: white;
+
+
+.envelope {
+  height: $size/1.6;
+  width: $size;
+  background-color: $bg;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.envelope:before,
+.envelope:after {
+  content: "";
+  height: $size * 0.8;
+  width: $size * 0.8;
+  border: 0.02 * $size solid darken($bg, 4%);
+  position: absolute;
+  border-radius: $size * 0.15 $size * 0.15 20px $size * 0.15;
+  background-color: $bg;
+}
+
+.envelope:before {
+  top: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+}
+
+.envelope:after {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-shadow: 1px 1px 20px 1px darken($bg, 15%);
+}
+
+.innerText{
+  width: 65%;
+  z-index: 1000;
+  top: 12%;
+  left: 53%;
+  transform: translateX(-50%);
+}
+
+@media  screen and (max-width: 576px) {
+  .envelope {
+    height: $size*0.45/1.6;
+    width: $size*0.45;
+    background-color: $bg;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+
+  .envelope:before{
+    content: "";
+    height: $size*0.45 * 0.8;
+    width: $size*0.45 * 0.8;
+    border: 0.02 * $size*0.45 solid darken($bg, 4%);
+    position: absolute;
+    border-radius: $size*0.45 * 0.15 $size*0.45 * 0.15 20px $size*0.45 * 0.15;
+    background-color: $bg;
+  }
+
+  .envelope:after {
+    content: "";
+    height: $size*0.45 * 0.9;
+    width: $size*0.45 * 0.9;
+    border: 0.02 * $size*0.45 solid darken($bg, 4%);
+    position: absolute;
+    border-radius: $size*0.45 * 0.15 $size*0.45 * 0.15 20px $size*0.45 * 0.15;
+    background-color: $bg;
+  }
+
+  .envelope:before {
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%) rotate(45deg);
+  }
+
+  .envelope:after {
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-shadow: 1px 1px 20px 1px darken($bg, 15%);
+  }
+
+  .innerText{
+    z-index: 1000;
+    top: 2%;
+    left: 53%;
+    transform: translateX(-50%);
+    width: 80%;
+
+    p{
+      font-size: 12px;
+    }
+  }
+}
