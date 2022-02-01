@@ -1,0 +1,20 @@
+.iframe {
+  // margin-top: -160px;
+  // overflow-x: hidden;
+  height: 1560px;
+  width: 100%;
+}
+
+.hide {
+  width: 100%;
+  background-color: var(--primaryBgColor);
+  height: 50px;
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .iframe {
+    height: 1700px;
+  }
+}
