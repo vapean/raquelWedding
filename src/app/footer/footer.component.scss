@@ -1,7 +1,16 @@
-#footer_component{
+#footer_component {
   height: 55px;
+
+  a {
+    font-style: normal;
+    color: var(--tertiaryTextColor);
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: 992px) {
-
+  #footer_component {
+    height: 75px;
+    font-size: 14px;
+  }
 }

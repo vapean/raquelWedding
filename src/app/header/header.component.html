@@ -34,7 +34,7 @@
             <hr>
           </div>
           <div class="nav-item" [routerLink]="['/contacto']" [ngClass]="{'active-link': activeUrl==='/contacto'}">
-            Contacto
+            Contacto y Lista de Bodas
             <hr>
           </div>
         </div>
@@ -47,14 +47,14 @@
     <div class="row">
       <div class="col-12 d-block d-lg-none position-relative">
         <div (click)="isMenuCollapsed=!isMenuCollapsed" class="btn hamburger-button" *ngIf="islogged">|||</div>
-        <img src="assets/images/sello_boda.png" class="logo" [routerLink]="['/home']">
+        <img src="assets/images/sello_boda.png" class="logo" [routerLink]="['/home']" (click)="isMenuCollapsed=!isMenuCollapsed">
         <div [ngClass]="{'isMenuCollapsed': isMenuCollapsed}" class="tertiaryBgColor mobile-nav">
-          <div class="nav-item" [routerLink]="['/nosotros']">Nosotros</div>
-          <div class="nav-item" [routerLink]="['/real-sitio']">Real Sitio</div>
-          <div class="nav-item" [routerLink]="['/palacio-carlos-iii']">Palacio Carlos III</div>
-          <div class="nav-item" [routerLink]="['/alojamiento']">Alojamiento</div>
-          <div class="nav-item" [routerLink]="['/confirmar-asistencia']">Confirmar Asistencia</div>
-          <div class="nav-item" [routerLink]="['/contacto']">Contacto</div>
+          <div class="nav-item" [routerLink]="['/nosotros']" (click)="isMenuCollapsed=!isMenuCollapsed">Nosotros</div>
+          <div class="nav-item" [routerLink]="['/real-sitio']" (click)="isMenuCollapsed=!isMenuCollapsed">Real Sitio</div>
+          <div class="nav-item" [routerLink]="['/palacio-carlos-iii']" (click)="isMenuCollapsed=!isMenuCollapsed">Palacio Carlos III</div>
+          <div class="nav-item" [routerLink]="['/alojamiento']" (click)="isMenuCollapsed=!isMenuCollapsed">Alojamiento</div>
+          <div class="nav-item" [routerLink]="['/confirmar-asistencia']" (click)="isMenuCollapsed=!isMenuCollapsed">Confirmar Asistencia</div>
+          <div class="nav-item" [routerLink]="['/contacto']" (click)="isMenuCollapsed=!isMenuCollapsed">Contacto y Lista de Bodas</div>
         </div>
       </div>
     </div>
