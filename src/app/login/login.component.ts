@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit() {
-    if (this.accessForm.value.password === '12345') {
+    if (this.accessForm.value.password === 'raquelydavid') {
       localStorage.setItem('isLogged', 'true');
       this.router.navigate(['home']);
     } else {
