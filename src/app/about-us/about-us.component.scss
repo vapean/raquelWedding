@@ -74,11 +74,20 @@
     transform-style: preserve-3d;
 }
 
-.frontside .card,
-.backside .card {
-    min-height: 352px;
-    max-height: inherit;
+.frontside,
+.backside {
+    max-width: 300px;
+    box-shadow: 5px 7px 9px -4px #9e9e9e;
 }
+
+.backside{
+    min-height: 100%;
+    min-height: 100%;
+}
+
+// img{
+//     max-width: 300px;
+// }
 
 .backside .card p {
     font-size: 16px;
@@ -104,9 +113,10 @@
 }
 
 @media screen and (max-width: 991px) {
-    .frontside .card,
-    .backside .card {
-        min-height: 450px;
-        max-height: inherit;
+    .frontside,
+    .backside {
+        max-width: 100%;
     }
+
+
 }
