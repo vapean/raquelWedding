@@ -3,6 +3,25 @@ main {
   min-height: calc(100vh - 90px - 55px);
 }
 
+.important-info{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: var(--quaternaryBgColor);
+  color: var(--primaryTextColor);
+  z-index: 100;
+}
+
+.button-confirm{
+  border: 1px solid var(--tertiaryTextColor)
+}
+
+.modal-content{
+  background-color: var(--primaryBgColor) !important;
+}
+
 @media screen and (max-width: 991px) {
   main {
     min-height: calc(100vh - 70px - 55px);

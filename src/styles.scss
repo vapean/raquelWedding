@@ -153,6 +153,11 @@ img{
   max-height: 350px;
 }
 
+div:focus, button:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 @media screen and (max-width: 991px) {
 
   * {

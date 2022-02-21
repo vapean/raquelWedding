@@ -2,4 +2,29 @@
 <main>
     <router-outlet></router-outlet>
 </main>
+
+<div class="important-info" (click)="open(content)">
+    Información importante
+</div>
 <app-footer></app-footer>
+
+<ng-template #content let-modal>
+    <div class="modal-header border-0">
+      <h4>Información importante</h4>
+      <div (click)="modal.dismiss('Cross click')">x</div>
+    </div>
+    <div class="modal-body py-0">
+        <ul>
+            <li>Lugar: Real Colegiata del Palacio de la Granja de San Ildefonso</li>
+            <li>Fecha: 28 de Mayo de 2022</li>
+            <li>Hora: 12:30</li>
+            <li>Teléfono: 697 706 684 (David) - 679 848 502 (Raquel)
+              </li>
+        </ul>
+    </div>
+
+    <div class="modal-footer justify-content-center border-0">
+      <button type="button" class="btn button-confirm" (click)="modal.close('Save click')" [routerLink]="['/confirmar-asistencia']">Confirmar Asistencia</button>
+    </div>
+  </ng-template>
+  
