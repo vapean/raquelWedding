@@ -23,6 +23,11 @@ export class HeaderComponent implements OnInit {
     this.router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe((event: NavigationEnd) => {
       this.activeUrl = event.url
       this.islogged = localStorage.getItem('isLogged') === 'true';
+
+      if (this.islogged && (this.activeUrl === "/" || this.activeUrl === "/login")) {
+        this.router.navigate(["/home"])
+      }
+      
     });
 
 
