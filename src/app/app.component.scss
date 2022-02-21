@@ -12,6 +12,7 @@ main {
   background-color: var(--quaternaryBgColor);
   color: var(--primaryTextColor);
   z-index: 100;
+  animation: 1.5s pulse-anim infinite;
 }
 
 .button-confirm{
@@ -25,5 +26,18 @@ main {
 @media screen and (max-width: 991px) {
   main {
     min-height: calc(100vh - 70px - 55px);
+  }
+}
+
+.important-info:hover {
+  animation: 1s pulse-anim infinite;
+}
+
+@keyframes pulse-anim {
+  0% {
+    box-shadow: var(--quaternaryBgColor) 0 0 0 0;
+  }
+  100% {
+    box-shadow: #2198fa00 0 0 0 20px;
   }
 }
