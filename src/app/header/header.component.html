@@ -47,7 +47,7 @@
     <div class="row">
       <div class="col-12 d-block d-lg-none position-relative">
         <div (click)="isMenuCollapsed=!isMenuCollapsed" class="btn hamburger-button" *ngIf="islogged">|||</div>
-        <img src="assets/images/sello_boda.png" class="logo" [routerLink]="['/home']" (click)="isMenuCollapsed=!isMenuCollapsed">
+        <img src="assets/images/sello_boda.png" class="logo" [routerLink]="['/home']" (click)="isMenuCollapsed=true">
         <div [ngClass]="{'isMenuCollapsed': isMenuCollapsed}" class="tertiaryBgColor mobile-nav">
           <div class="nav-item" [routerLink]="['/nosotros']" (click)="isMenuCollapsed=!isMenuCollapsed">Nosotros</div>
           <div class="nav-item" [routerLink]="['/real-sitio']" (click)="isMenuCollapsed=!isMenuCollapsed">Real Sitio</div>
